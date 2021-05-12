@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Détail de l'utilisateur</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+           <h1>Liste des commandes</h1>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Numéro</th>
+                <th>Date</th>
+                <th>Statut</th>
+                <th>Nom du client</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($orders as $order): ?>
+                <tr>
+                    <td><a href="details.php?order=<?= $order['orderNumber'] ?>"><?= $order['orderNumber'] ?></a></td>
+                    <td><?= $order['orderDate'] ?></td>
+                    <td><?= $order['status'] ?></td>
+                    <td><?= $order['customerName'] ?></td>
+                </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
+     <nav>
+        <ul>
+            <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                <li><a href="?page=<?= $i ?>"><?= $i ?></a></li>
+            <?php endfor ?>
+        </ul>
+    </nav>
+</body>
+</html>

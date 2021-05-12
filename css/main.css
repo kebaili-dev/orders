@@ -1,0 +1,139 @@
+
+table.table {
+  border: 3px solid #A40808;
+  background-color: #F5F5F5;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  
+}
+table.table td, table.table th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.table tbody td {
+  font-size: 14px;
+  font-weight: bold;
+}
+table.table tr:nth-child(even) {
+  background: #F5F5F5;
+}
+table.table td:nth-child(even) {
+  background: #F5F5F5;
+}
+table.table thead {
+  background: #A40808;
+}
+table.table thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #A40808;
+}
+table.table thead th:first-child {
+  border-left: none;
+}
+
+a
+{
+    color: #7F3734;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+a:hover
+{
+    color: #FFCC5C;
+}
+
+body
+{
+    /* structure */
+    margin: 0 auto;
+    padding: 1em;
+    min-height: 100%;
+    width: 80%;
+
+    /* presentation */
+    font-family: 'Open Sans', sans-serif;
+}
+
+html
+{
+    /* structure */
+    height: 100%;
+    margin:0;
+
+    /* presentation */
+    background-color: #F8FFF2;
+}
+
+h1
+{
+    color: black;
+    text-align:center
+}
+
+
+.order-form-customer
+{
+    /* structure */
+    padding: 1em 0;
+
+    /* presentation */
+    text-align: right;
+}
+
+
+.standard-table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+.standard-table caption
+{
+    /* structure */
+    padding: 0.5em 0;
+
+    /* presentation */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.standard-table tbody tr
+{
+    transition: background-color 0.25s;
+}
+.standard-table tbody tr:nth-child(even),
+.standard-table tfoot tr:nth-child(even)
+{
+    background-color: #DFE5DA;
+}
+.standard-table tbody tr:nth-child(odd),
+.standard-table tfoot tr:nth-child(odd)
+{
+    background-color: #BABFB5;
+}
+.standard-table tbody tr:hover
+{
+    background-color: green;
+    cursor: default;
+}
+.standard-table td,
+.standard-table th
+{
+    padding: 0.25em 0.5em;
+}
+.standard-table th
+{
+    color: #00968B;
+}
+.standard-table tfoot tr,
+.standard-table thead tr
+{
+    text-align: left;
+}
+.standard-table tfoot tr,
+.standard-table .money-column
+{
+    text-align: right;
+}
